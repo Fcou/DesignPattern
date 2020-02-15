@@ -17,7 +17,7 @@ type Product struct {
 
 //Add 添加新零件方法
 func (p *Product) Add(part string) {
-	p.parts = append(p.parts, part)
+	p.parts = append(p.parts, part) //防止扩容，一定要返回新切片
 }
 
 //Show 展示该产品全部零件方法
