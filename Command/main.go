@@ -67,6 +67,7 @@ func (b *BakeMuttonCommand) executeCommand() {
 	b.receiver.BakeMutton()
 }
 
+//Waiter 记录用户需求，创建修改命令队列，最后通知命令执行者
 type Waiter struct {
 	orders map[string]ICommand
 }
